@@ -8,9 +8,9 @@
     <header>
       <nav>
         <a>
-          <img src="img/logo.svg" width="163" height="35" alt="Девайс">
+          <img src="img/logo.svg" width="163" height="35" alt="Логотип DEVICE">
         </a>
-        <input type="search" placeholder="Поиск по сайту">
+        <input type="search" name="search" placeholder="Поиск по сайту">
         <a href="">Войти</a>
         <a href="">Сравнить</a>
         <a href="">Корзина</a>
@@ -28,26 +28,29 @@
             <a href="">Контакты</a>
           </li>
         </ul>
-        <ul>
-          <li>
-            <a href="">Виртуальная реальность</a>
-          </li>
-          <li>
-            <a href="catalog.html">Моноподы для селфи</a>
-          </li>
-          <li>
-            <a href="">Экшн-камеры</a>
-          </li>
-          <li>
-            <a href="">Фитнес-браслеты</a>
-          </li>
-          <li>
-            <a href="">Умные часы</a>
-          </li>
-          <li>
-            <a href="">Квадрокоптеры</a>
-          </li>
-        </ul>
+        <div>
+          <h2 class="visually-hidden">Меню каталога товаров</h2>
+          <ul>
+            <li>
+              <a href="">Виртуальная реальность</a>
+            </li>
+            <li>
+              <a href="catalog.html">Моноподы для селфи</a>
+            </li>
+            <li>
+              <a href="">Экшн-камеры</a>
+            </li>
+            <li>
+              <a href="">Фитнес-браслеты</a>
+            </li>
+            <li>
+              <a href="">Умные часы</a>
+            </li>
+            <li>
+              <a href="">Квадрокоптеры</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
     <main>
@@ -110,7 +113,7 @@
         </ul>
       </div>
       <div>
-        <h2>Категории товаров</h2>
+        <h2 class="visually-hidden">Категории товаров</h2>
         <ul>
           <li>
             <h3>Виртуальная реальность</h3>
@@ -134,10 +137,11 @@
       </div>
 
       <div>
+        <h2 class="visually-hidden">Услуги</h2>
         <ul>
-          <li><a>Доставка</a></li>
-          <li><a>Гарантия</a></li>
-          <li><a>Кредит</a></li>
+          <li><a href="">Доставка</a></li>
+          <li><a href="">Гарантия</a></li>
+          <li><a href="">Кредит</a></li>
         </ul>
       </div>
       <div>
@@ -193,7 +197,7 @@
         <h2>Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
           проверить работоспособность покупки. Всякое бывает.</p>
-        <a href=""><img src="img/map.jpg" width="560" height="222" alt="Где мы находимся">Карта</a>
+        <a href=""><img src="img/map.jpg" width="560" height="222" alt="Изображение карты"></a>
         <button type="button">Напишите нам</button>
       </section>
     </main>
@@ -234,5 +238,31 @@
         <img src="img/logo-html.svg" width="27" height="34" alt="Разработчик — htmlacademy">
       </a>
     </footer>
+    <section>
+      <h2 class="visually-hidden">Форма обратной связи</h2>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label>
+            Ваше имя:<input type="text" name="name" placeholder="Имя Фамилия">
+          </label>
+        </p>
+        <p>
+          <label>
+            Ваш e-mail:<input type="email" name="email" placeholder="email@example.com">
+          </label>
+        </p>
+        <p>
+          <label>
+            Текст письма:<input type="text" name="comment" placeholder="В свободной форме">
+          </label>
+        </p>
+        <button type="submit">Отправить</button>
+      </form>
+      <button type="button">Закрыть</button>
+    </section>
+    <section>
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <button type="button">Закрыть</button>
+    </section>
   </body>
 </html>

@@ -8,9 +8,9 @@
     <header>
       <nav>
         <a href="index.html">
-          <img src="img/logo.svg" width="163" height="35" alt="Девайс">
+          <img src="img/logo.svg" width="163" height="35" alt="На главную страницу">
         </a>
-        <input type="search" placeholder="Поиск по сайту">
+        <input type="search" name="search" placeholder="Поиск по сайту">
         <a href="">Валентин Петухов</a>
         <a href="">Выйти</a>
         <a href="">Сравнить</a>
@@ -29,26 +29,29 @@
             <a href="">Контакты</a>
           </li>
         </ul>
-        <ul>
-          <li>
-            <a href="">Виртуальная реальность</a>
-          </li>
-          <li>
-            <a href="catalog.html">Моноподы для селфи</a>
-          </li>
-          <li>
-            <a href="">Экшн-камеры</a>
-          </li>
-          <li>
-            <a href="">Фитнес-браслеты</a>
-          </li>
-          <li>
-            <a href="">Умные часы</a>
-          </li>
-          <li>
-            <a href="">Квадрокоптеры</a>
-          </li>
-        </ul>
+        <div>
+          <h2 class="visually-hidden">Меню каталога товаров</h2>
+          <ul>
+            <li>
+              <a href="">Виртуальная реальность</a>
+            </li>
+            <li>
+              <a href="">Моноподы для селфи</a>
+            </li>
+            <li>
+              <a href="">Экшн-камеры</a>
+            </li>
+            <li>
+              <a href="">Фитнес-браслеты</a>
+            </li>
+            <li>
+              <a href="">Умные часы</a>
+            </li>
+            <li>
+              <a href="">Квадрокоптеры</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
     <main>
@@ -60,7 +63,7 @@
       </ul>
       <div>
         <h2>Фильтр</h2>
-        <form>
+        <form action="https://echo.htmlacademy.ru" method="get">
           <section>
             <h3>Стоимость</h3>
             <div>
@@ -75,25 +78,25 @@
           <section>
             <h3>Цвет</h3>
               <label>
-                <input type="checkbox" name="color" value="black">Черный
+                <input type="checkbox" name="color_1" value="black" checked>Черный
               </label>
               <label>
-                <input type="checkbox" name="color" value="white">Белый
+                <input type="checkbox" name="color_2" value="white">Белый
               </label>
               <label>
-                <input type="checkbox" name="color" value="blue">Синий
+                <input type="checkbox" name="color_3" value="blue" checked>Синий
               </label>
               <label>
-                <input type="checkbox" name="color" value="red">Красный
+                <input type="checkbox" name="color_4" value="red" checked>Красный
               </label>
               <label>
-                <input type="checkbox" name="color" value="pink">Розовый
+                <input type="checkbox" name="color_5  " value="pink">Розовый
               </label>
           </section>
           <section>
             <h3>Bluetooth</h3>
               <label>
-                <input type="radio" name="bluetooth" value="yes">Есть
+                <input type="radio" name="bluetooth" value="yes" checked>Есть
               </label>
               <label>
                 <input type="radio" name="bluetooth" value="no">Нет
