@@ -3,18 +3,24 @@
   <head>
     <meta charset="utf-8">
     <title>Девайс</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
-    <header>
-      <nav>
-        <a>
+  <body class="page-body">
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-header-logo">
           <img src="img/logo.svg" width="163" height="35" alt="Логотип DEVICE">
         </a>
-        <input type="search" name="search" placeholder="Поиск по сайту">
-        <a href="">Войти</a>
-        <a href="">Сравнить</a>
-        <a href="">Корзина</a>
-        <ul>
+        <form class="search">
+          <input type="search" name="search" placeholder="Поиск по сайту">
+        </form>
+        <div class="user-navigation">
+          <a href="">Войти</a>
+          <a href="">Сравнить</a>
+          <a href="">Корзина</a>
+        </div>
+        <ul class="site-navigation">
           <li>
             <a href="catalog.html">Каталог товаров</a>
           </li>
@@ -28,7 +34,7 @@
             <a href="">Контакты</a>
           </li>
         </ul>
-        <div>
+        <div class="catalog-menu">
           <h2 class="visually-hidden">Меню каталога товаров</h2>
           <ul>
             <li>
@@ -53,7 +59,8 @@
         </div>
       </nav>
     </header>
-    <main>
+
+    <main class="container">
       <div>
         <div>
           <img src="img/slider-1.png" width="384" height="486" alt="Селфи-палка, восемь метров длиной и весом всего 5 килограмм">
@@ -183,37 +190,41 @@
           </li>
         </ul>
       </div>
-      <section>
-        <h2>О нас</h2>
-        <p>Огромный выбор гаджетов не оставит равнодушным гика,
-          который есть в каждом из нас.</p>
-        <p>Мы можем доставить ваш товар в самые отдаленные точки
-          России! DEVICE работает со многими транспортными компаниями:</p>
-        <ul>
-          <li>Деловые линии</li>
-          <li>Автотрейдинг</li>
-          <li>ЖелДорЭкспедиция</li>
-        </ul>
-        <a href="">Подробнее о нас</a>
-      </section>
-      <section>
-        <h2>Контакты</h2>
-        <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
-          проверить работоспособность покупки. Всякое бывает.</p>
-        <a href=""><img src="img/map.jpg" width="560" height="222" alt="Карта офиса по адресу: улица Строителей, 15. Пересечение Строителей и Вернадского."></a>
-        <button type="button">Напишите нам</button>
-      </section>
+      <div class="index-columns">
+        <section class="about">
+          <h2>О нас</h2>
+          <p>Огромный выбор гаджетов не оставит равнодушным гика,
+            который есть в каждом из нас.</p>
+          <p>Мы можем доставить ваш товар в самые отдаленные точки
+            России! DEVICE работает со многими транспортными компаниями:</p>
+          <ul class="partners-list">
+            <li>Деловые линии</li>
+            <li>Автотрейдинг</li>
+            <li>ЖелДорЭкспедиция</li>
+          </ul>
+          <a class="button" href="">Подробнее о нас</a>
+        </section>
+        <section class="contacts">
+          <h2>Контакты</h2>
+          <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
+            проверить работоспособность покупки. Всякое бывает.</p>
+          <a class="map-modal" href=""><img src="img/map.jpg" width="560" height="222" alt="Карта офиса по адресу: улица Строителей, 15. Пересечение Строителей и Вернадского."></a>
+          <a class="button" href="form.html">Напишите нам</a>
+        </section>
+      </div>
     </main>
-    <footer>
+    <footer class="main-footer">
       <div>
-        <a>
+        <a class="footer-logo">
           <img src="img/logo.svg" width="163" height="35" alt="Девайс">
         </a>
-        <a href="">Войти</a>
-        <a href="">Сравнить</a>
-        <a href="">Корзина</a>
-        <span>г. Москва, ул. Строителей, 15</span>
-        <ul>
+        <div class="user-navigation user-navigation-footer">
+          <a href="">Войти</a>
+          <a href="">Сравнить</a>
+          <a href="">Корзина</a>
+        </div>
+        <span class="footer-address">г. Москва, ул. Строителей, 15</span>
+        <ul class="site-navigation site-navigation-footer">
           <li>
             <a href="">Доставка</a>
           </li>
@@ -224,24 +235,25 @@
             <a href="">Контакты</a>
           </li>
         </ul>
-        <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
+        <a class="footer-phone" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
       </div>
-      <ul>
+      <ul class="footer-social">
         <li>
-          <a href="#">Фейсбук</a>
+          <a class="social-button" href="#"><span class="visually-hidden">Фейсбук</span></a>
         </li>
         <li>
-          <a href="#">Инстаграм</a>
+          <a class="social-button" href="#"><span class="visually-hidden">Инстаграм</span></a>
         </li>
         <li>
-          <a href="#">Твиттер</a>
+          <a class="social-button" href="#"><span class="visually-hidden">Твиттер</span></a>
         </li>
       </ul>
       <a href="https://htmlacademy.ru/intensive/htmlcss">
-        <img src="img/logo-html.svg" width="27" height="34" alt="Перейти на страницу интенсива на сайте htmlacademy, в рамках которого сверстан данный макет">
+        <img src="img/logo-html.svg" width="27" height="34" alt="Логотип htmlacademy — разработчик макета">
       </a>
     </footer>
-    <section>
+
+    <section class="modal">
       <h2 class="visually-hidden">Форма обратной связи</h2>
       <form action="https://echo.htmlacademy.ru" method="post">
         <p>
@@ -263,7 +275,7 @@
       </form>
       <button type="button">Закрыть</button>
     </section>
-    <section>
+    <section class="modal">
       <h2 class="visually-hidden">Как до нас добраться</h2>
       <button type="button">Закрыть</button>
     </section>

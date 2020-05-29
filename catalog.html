@@ -3,19 +3,25 @@
   <head>
     <meta charset="utf-8">
     <title>Девайс</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
-    <header>
-      <nav>
-        <a href="index.html">
+  <body class="page-body">
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a  class="main-header-logo" href="index.html">
           <img src="img/logo.svg" width="163" height="35" alt="На главную страницу">
         </a>
-        <input type="search" name="search" placeholder="Поиск по сайту">
+        <form class="search">
+          <input type="search" name="search" placeholder="Поиск по сайту">
+        </form>
+        <div class="user-navigation">
         <a href="">Валентин Петухов</a>
         <a href="">Выйти</a>
         <a href="">Сравнить</a>
         <a href="">Корзина</a>
-        <ul>
+        </div>
+        <ul class="site-navigation">
           <li>
             <a href="catalog.html">Каталог товаров</a>
           </li>
@@ -29,7 +35,7 @@
             <a href="">Контакты</a>
           </li>
         </ul>
-        <div>
+        <div class="catalog-menu">
           <h2 class="visually-hidden">Меню каталога товаров</h2>
           <ul>
             <li>
@@ -54,55 +60,47 @@
         </div>
       </nav>
     </header>
-    <main>
-      <h1>Моноподы для селфи</h1>
-      <ul>
+
+    <main class="container">
+      <h1 class="page-title">Моноподы для селфи</h1>
+      <ul class="breadcrumbs">
         <li><a href="index.html">Главная</a></li>
         <li><a href="catalog.html">Каталог товаров</a></li>
-        <li>Моноподы для селфи</li>
+        <li class="breadcrumbs-current">Моноподы для селфи</li>
       </ul>
-      <div>
+      <div class="filters">
         <h2>Фильтр</h2>
-        <form action="https://echo.htmlacademy.ru" method="get">
+        <form class="filter" action="https://echo.htmlacademy.ru" method="get">
           <section>
-            <h3>Стоимость</h3>
+            <h3 class="filter-title">Стоимость</h3>
             <div>
-              <label>
-                от<input type="text" name="min_price" value="0">
-              </label>
-              <label>
-                до<input type="text" name="max_price" value="5000">
-              </label>
+              <label for="filter-min-price">от</label>
+              <input class="filter-input-checkbox" type="text" name="min-price" value="0" id="filter-min-price">
+              <label for="filter-max-price">до</label>
+              <input class="filter-input-checkbox" type="text" name="max-price" value="5000" id="filter-max-price">
             </div>
           </section>
           <section>
-            <h3>Цвет</h3>
-              <label>
-                <input type="checkbox" name="color_1" value="black" checked>Черный
-              </label>
-              <label>
-                <input type="checkbox" name="color_2" value="white">Белый
-              </label>
-              <label>
-                <input type="checkbox" name="color_3" value="blue" checked>Синий
-              </label>
-              <label>
-                <input type="checkbox" name="color_4" value="red" checked>Красный
-              </label>
-              <label>
-                <input type="checkbox" name="color_5" value="pink">Розовый
-              </label>
+            <h3 class="filter-title">Цвет</h3>
+              <input class="filter-input-checkbox" type="checkbox" name="black" value="black" id="filter-black" checked>
+              <label for="filter-black">Черный</label>
+              <input class="filter-input-checkbox" type="checkbox" name="white" value="white" id="filter-white">
+              <label for="filter-white">Белый</label>
+              <input class="filter-input-checkbox" type="checkbox" name="blue" value="blue" id="filter-blue" checked>
+              <label for="filter-blue">Синий</label>
+              <input class="filter-input-checkbox" type="checkbox" name="red" value="red" id="filter-red" checked>
+              <label for="filter-red">Красный</label>
+              <input class="filter-input-checkbox" type="checkbox" name="pink" value="pink" id="filter-pink" disabled>
+              <label for="filter-red">Розовый</label>
           </section>
           <section>
-            <h3>Bluetooth</h3>
-              <label>
-                <input type="radio" name="bluetooth" value="yes" checked>Есть
-              </label>
-              <label>
-                <input type="radio" name="bluetooth" value="no">Нет
-              </label>
+            <h3 class="filter-title">Bluetooth</h3>
+              <input class="filter-input-radio" type="radio" name="bt" value="нуы" id="filter-bt-yes" checked>
+              <label for="filter-bt-yes">Есть</label>
+              <input class="filter-input-radio" type="radio" name="bt" value="тщ" id="filter-bt-no">
+              <label for="filter-bt-no">Нет</label>
           </section>
-          <button type="submit">Показать</button>
+          <button class="button" type="submit">Показать</button>
         </form>
       </div>
       <div>
@@ -117,40 +115,41 @@
           <li><button>По убыванию</button></li>
         </ul>
       </div>
-      <div>
-        <article>
+      <div class="catalog">
+        <h2 class="visually-hidden">Список товаров — Моноподы для селфи</h2>
+        <article class="catalog-item">
           <img src="img/item_1.jpg" width="360" height="380" alt="Любительская селфи-палка">
-          <h3><a href="">Любительская селфи-палка</a></h3>
-          <span>500 руб.</span>
+          <h3 class="item-title"><a href="">Любительская селфи-палка</a></h3>
+          <span class="item-price">500 руб.</span>
           <div>
-            <button>В корзину</button>
+            <button class="button">В корзину</button>
             <button>Добавить к сравнению</button>
           </div>
         </article>
-        <article>
+        <article class="catalog-item">
           <img src="img/item_2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
-          <h3><a href="">Профессиональная селфи-палка</a></h3>
-          <span>1 500 руб.</span>
+          <h3 class="item-title"><a href="">Профессиональная селфи-палка</a></h3>
+          <span class="item-price">>1 500 руб.</span>
           <div>
-            <button>В корзину</button>
+            <button class="button">В корзину</button>
             <button>Добавить к сравнению</button>
           </div>
         </article>
-        <article>
+        <article class="catalog-item">
           <img src="img/item_3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
-          <h3><a href="">Непотопляемая селфи-палка</a></h3>
-          <span>2 500 руб.</span>
+          <h3 class="item-title"><a href="">Непотопляемая селфи-палка</a></h3>
+          <span class="item-price">>2 500 руб.</span>
           <div>
-            <button>В корзину</button>
+            <button class="button">В корзину</button>
             <button>Добавить к сравнению</button>
           </div>
         </article>
-        <article>
+        <article class="catalog-item">
           <img src="img/item_4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
-          <h3><a href="">Селфи-палка «Следуй за мной»</a></h3>
-          <span>4 900 руб.</span>
+          <h3 class="item-title"><a href="">Селфи-палка «Следуй за мной»</a></h3>
+          <span class="item-price">4 900 руб.</span>
           <div>
-            <button>В корзину</button>
+            <button class="button">В корзину</button>
             <button>Добавить к сравнению</button>
           </div>
         </article>
@@ -173,17 +172,19 @@
         </li>
       </ul>
     </main>
-    <footer>
+    <footer class="main-footer">
       <div>
-        <a href="index.html">
+        <a class="footer-logo" href="index.html">
           <img src="img/logo.svg" width="163" height="35" alt="Девайс">
         </a>
-        <a href="">Валентин Петухов</a>
-        <a href="">Выйти</a>
-        <a href="">Сравнить</a>
-        <a href="">Корзина</a>
+        <div class="user-navigation footer">
+          <a href="">Валентин Петухов</a>
+          <a href="">Выйти</a>
+          <a href="">Сравнить</a>
+          <a href="">Корзина</a>
+        </div>
         <span>г. Москва, ул. Строителей, 15</span>
-        <ul>
+        <ul class="site-navigation footer">
           <li>
             <a href="">Доставка</a>
           </li>
@@ -196,19 +197,19 @@
         </ul>
         <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
       </div>
-      <ul>
+      <ul class="footer-social">
         <li>
-          <a href="#">Фейсбук</a>
+          <a class="social-button" href="#"><span class="visually-hidden">Фейсбук</span></a>
         </li>
         <li>
-          <a href="#">Инстаграм</a>
+          <a class="social-button" href="#"><span class="visually-hidden">Инстаграм</span></a>
         </li>
         <li>
-          <a href="#">Твиттер</a>
+          <a class="social-button" href="#"><span class="visually-hidden">Твиттер</span></a>
         </li>
       </ul>
       <a href="https://htmlacademy.ru/intensive/htmlcss">
-        <img src="img/logo-html.svg" width="27" height="34" alt="Перейти на страницу интенсива на сайте htmlacademy, в рамках которого сверстан данный макет">
+        <img src="img/logo-html.svg" width="27" height="34" alt="Логотип htmlacademy — разработчик макета">
       </a>
     </footer>
   </body>
