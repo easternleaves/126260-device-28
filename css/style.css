@@ -19,34 +19,34 @@
 }
 
 @font-face {
-  font-family: "Gilroy", Candara, sans-serif;
+  font-family: "Gilroy";
   font-weight: 800;
   font-style: normal;
-  src: url("../fonts/gilroyextrabold.woff2"); format("woff2"),
-       url("fonts/gilroyextrabold.woff"); format("woff");
+  src: url("fonts/gilroyextrabold.woff2") format("woff2"),
+       url("fonts/gilroyextrabold.woff") format("woff");
 }
 
 @font-face {
-  font-family: "Gilroy", Candara, sans-serif;
+  font-family: "Gilroy";
   font-weight: 300;
   font-style: normal;
-  src: url("../fonts/gilroylight.woff2"); format("woff2"),
-       url("fonts/gilroylight.woff"); format("woff");
+  src: url("fonts/gilroylight.woff2") format("woff2"),
+       url("fonts/gilroylight.woff") format("woff");
 }
 
 @font-face {
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Open Sans";
   font-weight: 400;
   font-style: normal;
-  src: url("../fonts/opensans.woff2"); format("woff2"),
+  src: url("fonts/opensans.woff2") format("woff2"),
        url("fonts/opensans.woff") format("woff");
 }
 
 @font-face {
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Open Sans";
   font-weight: 300;
   font-style: normal;
-  src: url("../fonts/opensanslight.woff2"); format("woff2"),
+  src: url("fonts/opensanslight.woff2") format("woff2"),
        url("fonts/opensanslight.woff") format("woff");
 }
 
@@ -112,7 +112,7 @@ img {
 
 .site-navigation {
   list-style: none;
-  font-family: "Gilroy", Candara, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
   font-style: normal;
   font-size: 18px;
@@ -137,7 +137,7 @@ img {
 }
 
 .page-title {
-  font-family: "Gilroy", Candara, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
   font-style: normal;
   font-size: 47px;
@@ -174,7 +174,7 @@ img {
 }
 
 .filter-title {
-  font-family: "Gilroy", Candara, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
   font-style: normal;
   font-size: 14px;
@@ -195,7 +195,7 @@ img {
 }
 
 .item-title {
-  font-family: "Gilroy", Candara, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
   font-style: normal;
   font-size: 18px;
@@ -205,7 +205,7 @@ img {
 }
 
 .item-price {
-  font-family: "Gilroy", Candara, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-weight: 300;
   font-style: normal;
   font-size: 16px;
@@ -220,7 +220,7 @@ img {
 }
 
 .index-columns h2 {
-  font-family: "Gilroy", Candara, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
   font-style: normal;
   font-size: 47px;
@@ -231,7 +231,7 @@ img {
 
 .partners-list {
   list-style: none;
-  font-family: "Gilroy", Candara, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
   font-style: normal;
   font-size: 16px;
@@ -240,7 +240,7 @@ img {
 }
 
 .button {
-  font-family: "Gilroy", Candara, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -271,42 +271,24 @@ img {
 
 }
 
-.user-navigation.user-navigation-footer {
-  font-weight: 300;
-  font-style: normal;
-  font-size: 15px;
-  line-height: 20px;
-}
-
-.site-navigation.site-navigation-footer {
-  list-style: none;
-  font-family: "Gilroy", Candara, sans-serif;
-  font-weight: 800;
-  font-style: normal;
-  font-size: 18px;
-  line-height: 22px;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-}
-
-.user-navigation.user-navigation-footer a {
+.user-navigation-footer a {
   color: var(--basic-white-alfa70);
 }
 
-.site-navigation.site-navigation-footer a {
+.site-navigation-footer a {
   color: var(--basic-white);
 }
 
-.user-navigation.user-navigation-footer a:hover {
+.user-navigation-footer a:hover {
   color: var(--basic-white);
 }
 
-.site-navigation.site-navigation-footer a:hover {
+.site-navigation-footer a:hover {
   color: var(--basic-white-alfa60);
 }
 
-.site-navigation.site-navigation-footer a:focus,
-.user-navigation.user-navigation-footer a:focus {
+.site-navigation-footer a:focus,
+.user-navigation-footer a:focus {
   color: var(--basic-white-alfa30);
 }
 
@@ -326,7 +308,6 @@ img {
 .footer-phone:focus {
   color: var(--basic-white-alfa30);
 }
-
 
 .footer-social {
   list-style: none;
