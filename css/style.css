@@ -92,7 +92,6 @@ img {
 .search input::placeholder {
   font-family: "Open Sans", Arial, sans-serif;
   font-weight: 300;
-  font-style: normal;
   font-size: 15px;
   line-height: 20px;
   color: var(--basic-black-alfa30);
@@ -108,7 +107,6 @@ img {
 
 .user-navigation {
   font-weight: 300;
-  font-style: normal;
   font-size: 15px;
   line-height: 20px;
 }
@@ -117,7 +115,6 @@ img {
   list-style: none;
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
-  font-style: normal;
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.2em;
@@ -141,7 +138,6 @@ img {
 
 .button {
   font-family: "Gilroy", Arial, sans-serif;
-  font-style: normal;
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
@@ -162,6 +158,14 @@ img {
   color: var(--basic-black-alfa30);
 }
 
+.title {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 58px;
+  color: var(--basic-black);
+}
+
 .slider {
   background-color: var(--basic-white);
 }
@@ -169,7 +173,6 @@ img {
 .slide-number {
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
-  font-style: normal;
   font-size: 179px;
   line-height: 219px;
   color: var(--basic-grey-lighter);
@@ -183,7 +186,6 @@ img {
 .slide-specification tr:nth-child(1) {
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 300;
-  font-style: normal;
   font-size: 36px;
   line-height: 42px;
   letter-spacing: 0.1em;
@@ -193,7 +195,6 @@ img {
 .slide-specification tr:nth-child(2) {
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 300;
-  font-style: normal;
   font-size: 13px;
   line-height: 15px;
   letter-spacing: 0.1em;
@@ -209,7 +210,6 @@ img {
 .item-categories h3 {
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
-  font-style: normal;
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.05em;
@@ -219,7 +219,6 @@ img {
 .service h2 {
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
-  font-style: normal;
   font-size: 47px;
   line-height: 58px;
   letter-spacing: 0.2em;
@@ -229,15 +228,6 @@ img {
 .service-current-tab {
   color: var(--special-yellow);
   background-color: var(--basic-black);
-}
-
-.page-title {
-  font-family: "Gilroy", Arial, sans-serif;
-  font-weight: 800;
-  font-style: normal;
-  font-size: 47px;
-  line-height: 58px;
-  color: var(--basic-black);
 }
 
 .breadcrumbs {
@@ -272,7 +262,6 @@ img {
 .sort h2{
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
-  font-style: normal;
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 0.1em;
@@ -286,7 +275,6 @@ img {
 .filter-title {
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
-  font-style: normal;
   font-size: 14px;
   line-height: 17px;
   letter-spacing: 0.1em;
@@ -294,7 +282,6 @@ img {
 
 .filter label {
   font-weight: 300;
-  font-style: normal;
   font-size: 14px;
   line-height: 19px;
   color: var(--basic-black);
@@ -314,7 +301,6 @@ img {
 
 .sort-list button {
   font-weight: 400;
-  font-style: normal;
   font-size: 14px;
   line-height: 19px;
   color: var(--basic-black-alfa30);
@@ -338,7 +324,6 @@ img {
 .catalog-item-title a {
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
-  font-style: normal;
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.05em;
@@ -348,7 +333,6 @@ img {
 .catalog-item-price {
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 300;
-  font-style: normal;
   font-size: 16px;
   line-height: 18px;
   letter-spacing: 0.05em;
@@ -363,7 +347,6 @@ img {
 .pagination a {
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
-  font-style: normal;
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 0.1em;
@@ -407,7 +390,6 @@ img {
 .index-columns h2 {
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
-  font-style: normal;
   font-size: 47px;
   line-height: 58px;
   letter-spacing: 0.2em;
@@ -418,7 +400,6 @@ img {
   list-style: none;
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
-  font-style: normal;
   font-size: 16px;
   line-height: 28px;
   color: var(--basic-black);
@@ -456,7 +437,6 @@ img {
 .footer-address,
 .footer-phone {
   font-weight: 300;
-  font-style: normal;
   font-size: 15px;
   line-height: 20px;
   color: var(--basic-white);
