@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>Девайс</title>
@@ -9,53 +9,57 @@
   <body class="page-body">
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-header-logo">
-          <img src="img/logo.svg" width="163" height="35" alt="Логотип DEVICE">
-        </a>
-        <form class="search">
-          <input type="search" name="search" placeholder="Поиск по сайту">
-        </form>
-        <div class="user-navigation">
-          <a href="">Войти</a>
-          <a href="">Сравнить</a>
-          <a href="">Корзина</a>
-        </div>
-        <ul class="site-navigation">
-          <li>
-            <a href="catalog.html">Каталог товаров</a>
-          </li>
-          <li>
-            <a href="">Доставка</a>
-          </li>
-          <li>
-            <a href="">Гарантия</a>
-          </li>
-          <li>
-            <a href="">Контакты</a>
-          </li>
-        </ul>
-        <div class="catalog-menu">
-          <h2 class="visually-hidden">Меню каталога товаров</h2>
-          <ul>
+        <div class="main-navigation-wrapper container">
+          <a class="main-header-logo">
+            <img src="img/logo.svg" width="163" height="35" alt="Логотип DEVICE">
+          </a>
+          <div class="user-navigation">
+            <form class="site-search">
+              <input type="search" name="search" placeholder="Поиск по сайту">
+            </form>
+            <div class="user-navigation-links">
+              <a class="login-link" href="">Войти</a>
+              <a class="compare-link" href="">Сравнить</a>
+              <a class="cart-link" href="">Корзина</a>
+            </div>
+          </div>
+          <ul class="site-navigation">
             <li>
-              <a href="">Виртуальная реальность</a>
+              <a href="catalog.html">Каталог товаров</a>
             </li>
             <li>
-              <a href="catalog.html">Моноподы для селфи</a>
+              <a href="">Доставка</a>
             </li>
             <li>
-              <a href="">Экшн-камеры</a>
+              <a href="">Гарантия</a>
             </li>
             <li>
-              <a href="">Фитнес-браслеты</a>
-            </li>
-            <li>
-              <a href="">Умные часы</a>
-            </li>
-            <li>
-              <a href="">Квадрокоптеры</a>
+              <a href="">Контакты</a>
             </li>
           </ul>
+          <div class="catalog-menu">
+            <h2 class="visually-hidden">Меню каталога товаров</h2>
+            <ul>
+              <li>
+                <a href="">Виртуальная реальность</a>
+              </li>
+              <li>
+                <a href="catalog.html">Моноподы для селфи</a>
+              </li>
+              <li>
+                <a href="">Экшн-камеры</a>
+              </li>
+              <li>
+                <a href="">Фитнес-браслеты</a>
+              </li>
+              <li>
+                <a href="">Умные часы</a>
+              </li>
+              <li>
+                <a href="">Квадрокоптеры</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
     </header>
@@ -208,13 +212,15 @@
           <h2>Контакты</h2>
           <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
             проверить работоспособность покупки. Всякое бывает.</p>
-          <a class="map-modal" href=""><img src="img/map.jpg" width="560" height="222" alt="Карта офиса по адресу: улица Строителей, 15. Пересечение Строителей и Вернадского."></a>
-          <a class="button" href="form.html">Напишите нам</a>
+          <div class="contacts-container">
+            <a class="map-modal" href=""><img src="img/map.jpg" width="560" height="222" alt="Карта офиса по адресу: улица Строителей, 15. Пересечение Строителей и Вернадского."></a>
+            <a class="button" href="form.html">Напишите нам</a>
+          </div>
         </section>
       </div>
     </main>
     <footer class="main-footer">
-      <div>
+      <div class="container">
         <a class="footer-logo">
           <img src="img/logo.svg" width="163" height="35" alt="Девайс">
         </a>
@@ -223,34 +229,36 @@
           <a href="">Сравнить</a>
           <a href="">Корзина</a>
         </div>
-        <span class="footer-address">г. Москва, ул. Строителей, 15</span>
-        <ul class="site-navigation site-navigation-footer">
+        <div class="footer-middle">
+          <span class="footer-address">г. Москва, ул. Строителей, 15</span>
+          <ul class="site-navigation site-navigation-footer">
+            <li>
+              <a href="">Доставка</a>
+            </li>
+            <li>
+              <a href="">Гарантия</a>
+            </li>
+            <li>
+              <a href="">Контакты</a>
+            </li>
+          </ul>
+          <a class="footer-phone" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
+        </div>
+        <ul class="footer-social">
           <li>
-            <a href="">Доставка</a>
+            <a class="social-button" href="#"><span class="">Фейсбук</span></a>
           </li>
           <li>
-            <a href="">Гарантия</a>
+            <a class="social-button" href="#"><span class="">Инстаграм</span></a>
           </li>
           <li>
-            <a href="">Контакты</a>
+            <a class="social-button" href="#"><span class="">Твиттер</span></a>
           </li>
         </ul>
-        <a class="footer-phone" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss">
+          <img src="img/logo-html.svg" width="27" height="34" alt="Логотип htmlacademy — разработчик макета">
+        </a>
       </div>
-      <ul class="footer-social">
-        <li>
-          <a class="social-button" href="#"><span class="visually-hidden">Фейсбук</span></a>
-        </li>
-        <li>
-          <a class="social-button" href="#"><span class="visually-hidden">Инстаграм</span></a>
-        </li>
-        <li>
-          <a class="social-button" href="#"><span class="visually-hidden">Твиттер</span></a>
-        </li>
-      </ul>
-      <a href="https://htmlacademy.ru/intensive/htmlcss">
-        <img src="img/logo-html.svg" width="27" height="34" alt="Логотип htmlacademy — разработчик макета">
-      </a>
     </footer>
 
     <section class="modal">
