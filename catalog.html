@@ -125,66 +125,84 @@
           <button class="button" type="submit">Показать</button>
         </form>
       </div>
-      <div class="sort">
-        <h2>Cортировка:</h2>
-        <ul class="sort-list">
-          <li class="sort-button-current"><button>По цене</button></li>
-          <li><button>По типу</button></li>
-          <li><button>По популярности</button></li>
-        </ul>
-        <ul>
-          <li><button><span class="visually-hidden">По возрастанию</span></button></li>
-          <li><button><span class="visually-hidden">По убыванию</span></button></li>
-        </ul>
-      </div>
-      <div class="catalog">
-        <h2 class="visually-hidden">Список товаров — Моноподы для селфи</h2>
-        <div class="catalog-list">
-          <article class="catalog-item">
-            <img src="img/item_1.jpg" width="360" height="380" alt="Любительская селфи-палка">
-            <h3 class="catalog-item-title"><a href="">Любительская селфи-палка</a></h3>
-            <span class="catalog-item-price">500 руб.</span>
-            <div class="catalog-item-buttons">
-              <button class="button">В корзину</button>
-              <button>Добавить к сравнению</button>
-            </div>
-          </article>
-          <article class="catalog-item">
-            <img src="img/item_2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
-            <h3 class="catalog-item-title"><a href="">Профессиональная селфи-палка</a></h3>
-            <span class="catalog-item-price">>1 500 руб.</span>
-            <div class="catalog-item-buttons">
-              <button class="button">В корзину</button>
-              <button>Добавить к сравнению</button>
-            </div>
-          </article>
-          <article class="catalog-item">
-            <img src="img/item_3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
-            <h3 class="catalog-item-title"><a href="">Непотопляемая селфи-палка</a></h3>
-            <span class="catalog-item-price">>2 500 руб.</span>
-            <div class="catalog-item-buttons">
-              <button class="button">В корзину</button>
-              <button>Добавить к сравнению</button>
-            </div>
-          </article>
-          <article class="catalog-item">
-            <img src="img/item_4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
-            <h3 class="catalog-item-title"><a href="">Селфи-палка «Следуй за мной»</a></h3>
-            <span class="catalog-item-price">4 900 руб.</span>
-            <div class="catalog-item-buttons">
-              <button class="button">В корзину</button>
-              <button>Добавить к сравнению</button>
-            </div>
-          </article>
+      <div class="catalog-column-right">
+        <div class="sort">
+          <h2>Cортировка:</h2>
+          <ul class="sort-list">
+            <li class="sort-button-current"><button>По цене</button></li>
+            <li><button>По типу</button></li>
+            <li><button>По популярности</button></li>
+          </ul>
+          <ul>
+            <li><button><span class="visually-hidden">По возрастанию</span></button></li>
+            <li><button><span class="visually-hidden">По убыванию</span></button></li>
+          </ul>
         </div>
+        <div class="catalog">
+          <h2 class="visually-hidden">Список товаров — Моноподы для селфи</h2>
+          <div class="catalog-list">
+            <article class="catalog-item">
+              <p class="catalog-item-image">
+                <img src="img/item_1.jpg" width="360" height="380" alt="Любительская селфи-палка">
+              </p>
+              <p class="catalog-item-text">
+                <h3 class="catalog-item-title"><a href="">Любительская селфи-палка</a></h3>
+                <span class="catalog-item-price">500 руб.</span>
+              </p>
+              <div class="catalog-item-buttons">
+                <button class="button">В корзину</button>
+                <button>Добавить к сравнению</button>
+              </div>
+            </article>
+            <article class="catalog-item">
+              <p class="catalog-item-image">
+                <img src="img/item_2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+              </p>
+              <p class="catalog-item-text">
+                <h3 class="catalog-item-title"><a href="">Профессиональная селфи-палка</a></h3>
+                <span class="catalog-item-price">>1 500 руб.</span>
+              </p>
+              <div class="catalog-item-buttons">
+                <button class="button">В корзину</button>
+                <button>Добавить к сравнению</button>
+              </div>
+            </article>
+            <article class="catalog-item">
+              <p class="catalog-item-image">
+                <img src="img/item_3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+              </p>
+              <p class="catalog-item-text">
+                <h3 class="catalog-item-title"><a href="">Непотопляемая селфи-палка</a></h3>
+                <span class="catalog-item-price">>2 500 руб.</span>
+              </p>
+              <div class="catalog-item-buttons">
+                <button class="button">В корзину</button>
+                <button>Добавить к сравнению</button>
+              </div>
+            </article>
+            <article class="catalog-item">
+              <p class="catalog-item-image">
+                <img src="img/item_4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+              </p>
+              <p class="catalog-item-text">
+                <h3 class="catalog-item-title"><a href="">Селфи-палка «Следуй за мной»</a></h3>
+                <span class="catalog-item-price">4 900 руб.</span>
+              </p>
+              <div class="catalog-item-buttons">
+                <button class="button">В корзину</button>
+                <button>Добавить к сравнению</button>
+              </div>
+            </article>
+          </div>
+        </div>
+        <ul class="pagination">
+          <li class="pagination-prev"><a href="">назад</a></li>
+          <li class="pagination-item-current"><a>1</a></li>
+          <li><a href="">2</a></li>
+          <li><a href="">3</a></li>
+          <li class="pagination-next"><a href="">вперед</a></li>
+        </ul>
       </div>
-      <ul class="pagination">
-        <li class="pagination-prev"><a href="">назад</a></li>
-        <li class="pagination-item-current"><a>1</a></li>
-        <li><a href="">2</a></li>
-        <li><a href="">3</a></li>
-        <li class="pagination-next"><a href="">вперед</a></li>
-      </ul>
     </main>
     <footer class="main-footer">
       <div class="container">
@@ -200,19 +218,25 @@
           </div>
         </div>
         <div class="footer-middle">
-          <span class="footer-address">г. Москва, ул. Строителей, 15</span>
-          <ul class="site-navigation site-navigation-footer">
-            <li>
-              <a href="">Доставка</a>
-            </li>
-            <li>
-              <a href="">Гарантия</a>
-            </li>
-            <li>
-              <a href="">Контакты</a>
-            </li>
-          </ul>
-          <a class="footer-phone" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
+          <div class="footer-middle-column">
+            <span class="footer-address">г. Москва, ул. Строителей, 15</span>
+          </div>
+          <div class="footer-middle-column-center">
+            <ul class="site-navigation site-navigation-footer">
+              <li>
+                <a href="">Доставка</a>
+              </li>
+              <li>
+                <a href="">Гарантия</a>
+              </li>
+              <li>
+                <a href="">Контакты</a>
+              </li>
+            </ul>
+           </div>
+           <div class="footer-middle-column-right ">
+             <a class="footer-phone" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
+           </div>
         </div>
         <div class="footer-bottom">
           <ul class="footer-social">
