@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Дмитрий Исаев](https://up.htmlacademy.ru/htmlcss/28/user/126260).
-* Наставник: [Михаил Савотиков](https://htmlacademy.ru/profile/id98316).
+* Наставник: [Михал Кислый](https://htmlacademy.ru/profile/smart-grizzly).
 
 ---
 
