@@ -64,61 +64,73 @@
 
     <main class="container">
       <div class="slider">
-        <div>
-          <img src="img/slider-1.png" width="384" height="486" alt="Селфи-палка, восемь метров длиной и весом всего 5 килограмм">
-          <span class="slide-number">01</span>
-          <p class="title">Делай селфи, как Бен Стиллер!</p>
-          <p class="slide-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-          <a class="button" href="">подробнее</a>
-          <table class="slide-specification">
-            <tr>
-              <td>8,5 м</td>
-              <td>5 кг</td>
-              <td>Карбон</td>
-            </tr>
-            <tr>
-              <td>Длина палки</td>
-              <td>Вес палки</td>
-              <td>Материал</td>
-            </tr>
-          </table>
+        <div class="slide">
+          <div class="slide-image-column">
+            <img class="" src="img/slider-1.png" width="384" height="486" alt="Селфи-палка, восемь метров длиной и весом всего 5 килограмм">
+          </div>
+          <div class="slide-info-column">
+            <span class="slide-number">01</span>
+            <p class="title">Делай селфи, как Бен Стиллер!</p>
+            <p class="slide-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+            <a class="button" href="">подробнее</a>
+            <table class="slide-specification">
+              <tr>
+                <td>8,5 м</td>
+                <td>5 кг</td>
+                <td>Карбон</td>
+              </tr>
+              <tr>
+                <td>Длина палки</td>
+                <td>Вес палки</td>
+                <td>Материал</td>
+              </tr>
+            </table>
+          </div>
         </div>
-        <div>
-          <img src="img/slider-2.png" width="345" height="483" alt="Мотивирующий фитнес-браслет, чтобы не пропускать занятия и соблюдать диету">
-          <span class="slide-number">02</span>
-          <p class="title">Худеем правильно!</p>
-          <p class="slide-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-          <a class="button" href="">подробнее</a>
-          <table class="slide-specification">
-            <tr>
-              <td>48 часов</td>
-            </tr>
-            <tr>
-              <td>Без подзарядки</td>
-            </tr>
-          </table>
+        <div class="slide">
+          <div class="slide-image-column">
+            <img src="img/slider-2.png" width="345" height="483" alt="Мотивирующий фитнес-браслет, чтобы не пропускать занятия и соблюдать диету">
+          </div>
+          <div class="slide-info-column">
+            <span class="slide-number">02</span>
+            <p class="title">Худеем правильно!</p>
+            <p class="slide-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+            <a class="button" href="">подробнее</a>
+            <table class="slide-specification">
+              <tr>
+                <td>48 часов</td>
+              </tr>
+              <tr>
+                <td>Без подзарядки</td>
+              </tr>
+            </table>
+          </div>
         </div>
-        <div>
-          <img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер с мощным лазером замаскированным под стандартную камеру">
-          <span class="slide-number">03</span>
-          <p class="title">Порхает как бабочка, жалит как пчела!</p>
-          <p class="slide-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-          <a class="button" href="">подробнее</a>
-          <table class="slide-specification">
-            <tr>
-              <td>800 м</td>
-              <td>50 м</td>
-            </tr>
-            <tr>
-              <td>Дальность полета</td>
-              <td>Радиус поражения</td>
-            </tr>
-          </table>
+        <div class="slide">
+          <div class="slide-image-column">
+            <img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер с мощным лазером замаскированным под стандартную камеру">
+          </div>
+          <div class="slide-info-column">
+            <span class="slide-number">03</span>
+            <p class="title">Порхает как бабочка, жалит как пчела!</p>
+            <p class="slide-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+            <a class="button" href="">подробнее</a>
+            <table class="slide-specification">
+              <tr>
+                <td>800 м</td>
+                <td>50 м</td>
+              </tr>
+              <tr>
+                <td>Дальность полета</td>
+                <td>Радиус поражения</td>
+              </tr>
+            </table>
+          </div>
         </div>
-        <ul>
-          <li><button>Слайд 1</button></li>
-          <li><button>Слайд 2</button></li>
-          <li><button>Слайд 3</button></li>
+        <ul class="slide-button">
+          <li><button aria-label="Кнопка на слайд 1">Слайд 1</button></li>
+          <li><button aria-label="Кнопка на слайд 2">Слайд 2</button></li>
+          <li><button aria-label="Кнопка на слайд 3">Слайд 3</button></li>
         </ul>
       </div>
       <div>
@@ -144,28 +156,29 @@
           </li>
         </ul>
       </div>
-
-      <div>
-        <h2 class="visually-hidden">Услуги</h2>
-        <ul class="service-tabs">
-          <li><a class="button" href="">Доставка</a></li>
-          <li><a class="button" href="">Гарантия</a></li>
-          <li><a class="button service-current-tab" href="">Кредит</a></li>
-        </ul>
-      </div>
       <div class="service">
-        <section>
-          <h2>Доставка</h2>
-          <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-        </section>
-        <section>
-          <h2>Гарантия</h2>
-          <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
-        </section>
-        <section>
-          <h2>Кредит</h2>
-          <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
-        </section>
+        <div>
+          <h2 class="visually-hidden">Услуги</h2>
+          <ul class="service-tabs">
+            <li><a class="button service-current-tab" href="">Доставка</a></li>
+            <li><a class="button" href="">Гарантия</a></li>
+            <li><a class="button" href="">Кредит</a></li>
+          </ul>
+        </div>
+        <div class="service-info">
+          <section>
+            <h2>Доставка</h2>
+            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+          </section>
+          <section>
+            <h2>Гарантия</h2>
+            <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+          </section>
+          <section>
+            <h2>Кредит</h2>
+            <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+          </section>
+        </div>
       </div>
       <div>
         <h2 class="visually-hidden">Производители</h2>
@@ -252,19 +265,19 @@
           <div class="footer-bottom-column-center">
             <ul class="footer-social">
               <li>
-                <a class="social-button" href="#"><span class="">Фейсбук</span></a>
+                <a aria-label="Ссылка на наш Facebook" class="social-button" href="#">Фейсбук</a>
               </li>
               <li>
-                <a class="social-button" href="#"><span class="">Инстаграм</span></a>
+                <a aria-label="Ссылка на наш Instagram" class="social-button" href="#">Инстаграм</a>
               </li>
               <li>
-                <a class="social-button" href="#"><span class="">Твиттер</span></a>
+                <a aria-label="Ссылка на наш Twitter" class="social-button" href="#">Твиттер</a>
               </li>
             </ul>
           </div>
           <div class="footer-bottom-column-right">
             <a href="https://htmlacademy.ru/intensive/htmlcss">
-              <img src="img/logo-html.svg" width="27" height="34" alt="Логотип htmlacademy — разработчик макета">
+              <img src="img/logo-html.svg" width="27" height="34" alt="Логотип htmlacademy — разработчика макета">
             </a>
           </div>
         </div>

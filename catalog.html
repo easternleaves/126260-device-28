@@ -62,7 +62,6 @@
         </div>
       </nav>
     </header>
-
     <main class="page-catalog container">
       <h1 class="title">Моноподы для селфи</h1>
       <ul class="breadcrumbs">
@@ -133,9 +132,9 @@
             <li><button>По типу</button></li>
             <li><button>По популярности</button></li>
           </ul>
-          <ul>
-            <li><button><span class="visually-hidden">По возрастанию</span></button></li>
-            <li><button><span class="visually-hidden">По убыванию</span></button></li>
+          <ul class="sort-buttons">
+            <li><button aria-label="Сортировать по возрастанию"></button></li>
+            <li><button aria-label="Сортировать по убыванию"></button></li>
           </ul>
         </div>
         <div class="catalog">
@@ -187,14 +186,19 @@
             </article>
           </div>
         </div>
-        <ul class="pagination">
-          <li class="pagination-prev"><a href="">назад</a></li>
-          <li class="pagination-item-current"><a>1</a></li>
-          <li><a href="">2</a></li>
-          <li><a href="">3</a></li>
-          <li class="pagination-next"><a href="">вперед</a></li>
-        </ul>
-      </div>
+        <div class="pagination">
+          <div class="pagination-prev">
+            <a href="">назад</a>
+          </div>
+          <ul class="pagination-pages">
+            <li class="pagination-item-current"><a>1</a></li>
+            <li><a href="">2</a></li>
+            <li><a href="">3</a></li>
+          </ul>
+          <div class="pagination-prev">
+            <a href="">назад</a>
+          </div>
+        </div>
     </main>
     <footer class="main-footer">
       <div class="container">
@@ -234,13 +238,13 @@
           <div class="footer-bottom-column-center">
             <ul class="footer-social">
               <li>
-                <a class="social-button" href="#"><span class="">Фейсбук</span></a>
+                <a aria-label="Ссылка на наш Facebook" class="social-button" href="#">Фейсбук</a>
               </li>
               <li>
-                <a class="social-button" href="#"><span class="">Инстаграм</span></a>
+                <a aria-label="Ссылка на наш Instagram" class="social-button" href="#">Инстаграм</a>
               </li>
               <li>
-                <a class="social-button" href="#"><span class="">Твиттер</span></a>
+                <a aria-label="Ссылка на наш Twitter" class="social-button" href="#">Твиттер</a>
               </li>
             </ul>
           </div>
