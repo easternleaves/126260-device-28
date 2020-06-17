@@ -73,18 +73,18 @@
             <p class="title">Делай селфи, как Бен Стиллер!</p>
             <p class="slide-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
             <a class="button" href="">подробнее</a>
-            <table class="slide-specification">
-              <tr>
-                <td>8,5 м</td>
-                <td>5 кг</td>
-                <td>Карбон</td>
-              </tr>
-              <tr>
-                <td>Длина палки</td>
-                <td>Вес палки</td>
-                <td>Материал</td>
-              </tr>
-            </table>
+            <div class="slide-specification">
+              <ul>
+                <li>8,5 м</li>
+                <li>5 кг</li>
+                <li>Карбон</li>
+              </ul>
+              <ul>
+                <li>Длина палки</li>
+                <li>Вес палки</li>
+                <li>Материал</li>
+              </ul>
+            </div>
           </div>
         </div>
         <div class="slide">
@@ -96,14 +96,14 @@
             <p class="title">Худеем правильно!</p>
             <p class="slide-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
             <a class="button" href="">подробнее</a>
-            <table class="slide-specification">
-              <tr>
-                <td>48 часов</td>
-              </tr>
-              <tr>
-                <td>Без подзарядки</td>
-              </tr>
-            </table>
+            <div class="slide-specification">
+              <ul>
+                <li>48 часов</li>
+              </ul>
+              <ul>
+                <li>Без подзарядки</li>
+              </ul>
+            </div>
           </div>
         </div>
         <div class="slide">
@@ -115,16 +115,16 @@
             <p class="title">Порхает как бабочка, жалит как пчела!</p>
             <p class="slide-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
             <a class="button" href="">подробнее</a>
-            <table class="slide-specification">
-              <tr>
-                <td>800 м</td>
-                <td>50 м</td>
-              </tr>
-              <tr>
-                <td>Дальность полета</td>
-                <td>Радиус поражения</td>
-              </tr>
-            </table>
+            <div class="slide-specification">
+              <ul>
+                <li>800 м</li>
+                <li>50 м</li>
+              </ul>
+              <ul>
+                <li>Дальность полета</li>
+                <li>Радиус поражения</li>
+              </ul>
+            </div>
           </div>
         </div>
         <ul class="slide-button">
@@ -137,22 +137,46 @@
         <h2 class="visually-hidden">Категории товаров</h2>
         <ul class="item-categories">
           <li>
-            <h3>Виртуальная реальность</h3>
+            <a href="">
+              <div class="item-category-wrap">
+              </div>
+              <p>Виртуальная реальность</p>
+            </a
           </li>
           <li>
-            <h3>Моноподы для селфи</h3>
+            <a href="catalog.html">
+              <div class="item-category-wrap">
+              </div>
+              <p>Моноподы для селфи</p>
+            </a>
           </li>
           <li>
-            <h3>Экшн-камеры</h3>
+            <a href="">
+              <div class="item-category-wrap">
+              </div>
+              <p>Экшн-камеры</p>
+            </a>
           </li>
           <li>
-            <h3>Фитнес-браслеты</h3>
+            <a href="">
+              <div class="item-category-wrap">
+              </div>
+              <p class="item-category-name">Фитнес-браслеты</p>
+            </a>
           </li>
           <li>
-            <h3>Умные часы</h3>
+            <a href="">
+              <div class="item-category-wrap">
+              </div>
+              <p>Умные часы</p>
+            </a>
           </li>
           <li>
-            <h3>Квадрокоптеры</h3>
+            <a href="">
+              <div class="item-category-wrap">
+              </div>
+              <p>Квадрокоптеры</p>
+            </a>
           </li>
         </ul>
       </div>
@@ -223,7 +247,7 @@
           <h2>Контакты</h2>
           <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
             проверить работоспособность покупки. Всякое бывает.</p>
-            <a class="map-link" href=""><img src="img/map.jpg" width="560" height="222" alt="Карта офиса по адресу: улица Строителей, 15. Пересечение Строителей и Вернадского."></a>
+            <a class="map-link" aria-label="Карта офиса по адресу: улица Строителей, 15. Пересечение Строителей и Вернадского" href=""><img src="img/map.jpg" width="560" height="222"></a>
             <a class="button" href="form.html">Напишите нам</a>
         </section>
       </div>
@@ -265,19 +289,19 @@
           <div class="footer-bottom-column-center">
             <ul class="footer-social">
               <li>
-                <a aria-label="Ссылка на наш Facebook" class="social-button" href="#">Фейсбук</a>
+                <a class="social-button" aria-label="Ссылка на наш Facebook" href="#">Фейсбук</a>
               </li>
               <li>
-                <a aria-label="Ссылка на наш Instagram" class="social-button" href="#">Инстаграм</a>
+                <a class="social-button" aria-label="Ссылка на наш Instagram" href="#">Инстаграм</a>
               </li>
               <li>
-                <a aria-label="Ссылка на наш Twitter" class="social-button" href="#">Твиттер</a>
+                <a class="social-button" aria-label="Ссылка на наш Twitter" href="#">Твиттер</a>
               </li>
             </ul>
           </div>
           <div class="footer-bottom-column-right">
             <a href="https://htmlacademy.ru/intensive/htmlcss">
-              <img src="img/logo-html.svg" width="27" height="34" alt="Логотип htmlacademy — разработчика макета">
+              <img src="img/logo-html.svg" width="27" height="34" alt="Лого htmlacademy — разработчик макета" aria-label="Логотип разработчика">
             </a>
           </div>
         </div>

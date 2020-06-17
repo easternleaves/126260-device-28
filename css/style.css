@@ -283,9 +283,45 @@ img {
 }
 
 .slide-specification {
+
   margin-top: 60px;
 }
 
+.slide-specification ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slide-specification ul:nth-child(1) {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0.1em;
+  padding-bottom: 15px;
+  color: var(--basic-black);
+}
+
+.slide-specification ul:nth-child(2) {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  color: var(--basic-black);
+}
+
+.slide-specification ul:nth-child(1) li {
+  padding-right: 65px;
+}
+
+.slide-specification ul:nth-child(2) li {
+  padding-right: 67px;
+}
+
+/*
 .slide-specification tr:nth-child(1) {
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 300;
@@ -307,6 +343,7 @@ img {
 .slide-specification td {
   padding-right: 65px;
 }
+ */
 
 .slide-button {
   margin: 0;
@@ -320,18 +357,15 @@ img {
   margin: 0;
   padding: 0;
   margin-top: 96px;
-  padding-top: 160px;
   list-style: none
 }
 
 .item-categories li {
   margin-right: 40px;
   text-align: left;
-  outline: 5px solid rgba(0, 255, 255, 0.3);
-  outline-offset: -5px;
 }
 
-.item-categories h3 {
+.item-categories p {
   margin: 0;
   padding: 0;
   margin-top: 38px;
@@ -341,6 +375,16 @@ img {
   line-height: 22px;
   letter-spacing: 0.05em;
   color: var(--basic-black);
+}
+
+.item-categories .item-category-name {
+  letter-spacing: 0em;
+}
+
+.item-category-wrap {
+  width: 160px;
+  height: 160px;
+  background-color: var(--special-yellow);
 }
 
 .service {
@@ -576,13 +620,13 @@ img {
 .catalog-item-text {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
   margin-top: 30px;
 }
 
 .catalog-item-title {
   margin: 0;
   padding: 0;
-  margin-bottom: 30px;
 }
 
 .catalog-item-title a {
