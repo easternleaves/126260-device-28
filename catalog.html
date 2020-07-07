@@ -8,74 +8,74 @@
   </head>
   <body class="page-body">
     <header class="main-header">
-      <nav class="main-navigation container">
+      <nav class="main-navigation">
         <a class="main-header-logo main-header-logo-link" href="index.html" aria-label="Лого магазина Девайс">
-          <svg width="163" height="35" fill="none"><g clip-path="url(#clip0)"><path fill="#000" fill-rule="evenodd" d="M-.151.702v33.6h13.532a15.721 15.721 0 0011.72-4.824 16.459 16.459 0 004.712-11.976 16.457 16.457 0 00-4.712-11.976A15.724 15.724 0 0013.381.702H-.151zM7.582 26.91V8.091h5.8a8.646 8.646 0 016.5 2.568 9.408 9.408 0 012.489 6.84 9.406 9.406 0 01-2.489 6.84 8.642 8.642 0 01-6.5 2.568h-5.8v.003zm34.8-5.952h12.082v-7.3H42.378V8.091h13.291V.702H34.645v33.6H55.91V26.91H42.378v-5.952h.004zm36.343 13.344L89.744.702h-8.458l-7.491 24.72L66.304.702h-8.457l11.019 33.6h9.859zm14.4 0h7.733V.702h-7.733v33.6zm38.615-1.416a15.508 15.508 0 006.041-5.688l-6.67-3.84a7.481 7.481 0 01-3.165 3.024 9.873 9.873 0 01-4.664 1.1 9.594 9.594 0 01-7.177-2.736 9.911 9.911 0 01-2.682-7.248 9.91 9.91 0 012.682-7.248 9.593 9.593 0 017.177-2.736 9.897 9.897 0 014.639 1.08 7.589 7.589 0 013.19 3.048l6.67-3.84a15.874 15.874 0 00-6.09-5.688 17.42 17.42 0 00-8.409-2.088c-9.779-.272-17.797 7.691-17.591 17.472-.208 9.781 7.809 17.747 17.588 17.476 2.95.027 5.859-.691 8.458-2.088h.003zm17.881-11.928h12.082v-7.3h-12.085V8.091h13.29V.702h-21.023v33.6h21.265V26.91h-13.532v-5.952h.003z" clip-rule="evenodd"/></g><defs><clipPath id="clip0"><path fill="#fff" d="M0 0h163v35H0z"/></clipPath></defs></svg>
+          <svg width="163" height="35" fill="none"><g clip-path="url(#clip0)"><path fill="#000" fill-rule="evenodd" d="M-.151.702v33.6h13.532a15.721 15.721 0 0011.72-4.824 16.459 16.459 0 004.712-11.976 16.457 16.457 0 00-4.712-11.976A15.724 15.724 0 0013.381.702H-.151zM7.582 26.91V8.091h5.8a8.646 8.646 0 016.5 2.568 9.408 9.408 0 012.489 6.84 9.406 9.406 0 01-2.489 6.84 8.642 8.642 0 01-6.5 2.568h-5.8v.003zm34.8-5.952h12.082v-7.3H42.378V8.091h13.291V.702H34.645v33.6H55.91V26.91H42.378v-5.952h.004zm36.343 13.344L89.744.702h-8.458l-7.491 24.72L66.304.702h-8.457l11.019 33.6h9.859zm14.4 0h7.733V.702h-7.733v33.6zm38.615-1.416a15.508 15.508 0 006.041-5.688l-6.67-3.84a7.481 7.481 0 01-3.165 3.024 9.873 9.873 0 01-4.664 1.1 9.594 9.594 0 01-7.177-2.736 9.911 9.911 0 01-2.682-7.248 9.91 9.91 0 012.682-7.248 9.593 9.593 0 017.177-2.736 9.897 9.897 0 014.639 1.08 7.589 7.589 0 013.19 3.048l6.67-3.84a15.874 15.874 0 00-6.09-5.688 17.42 17.42 0 00-8.409-2.088c-9.779-.272-17.797 7.691-17.591 17.472-.208 9.781 7.809 17.747 17.588 17.476 2.95.027 5.859-.691 8.458-2.088h.003zm17.881-11.928h12.082v-7.3h-12.085V8.091h13.29V.702h-21.023v33.6h21.265V26.91h-13.532v-5.952h.003z" clip-rule="evenodd"/></g></svg>
         </a>
         <div class="user-navigation">
-          <form class="site-search" action="https://echo.htmlacademy.ru" method="post" >
-            <input type="search" name="search" placeholder="Поиск по сайту">
+          <form class="site-search" action="https://echo.htmlacademy.ru" method="post">
+            <input class="site-search-input" type="search" name="search" id="site-search-field" placeholder="Поиск по сайту" >
+            <input class="site-search-button" type="submit" value="Найти" name="submit">
+            <label class="site-search-decoration" for="site-search-field"></label>
           </form>
-         <div class="user-navigation-header">
-           <a class="profile-link" href="">
-             <svg class="login-link-icon" width="13" height="14" fill="none"><path fill="#000" d="M6.49996 2.33333c1.19708 0 2.16667 1.04417 2.16667 2.33333C8.66663 5.95583 7.69704 7 6.49996 7S4.33329 5.95583 4.33329 4.66666c0-1.28916.96959-2.33333 2.16667-2.33333zm0 9.33337s4.33334 0 4.33334-1.1667c0-1.4-2.11251-2.91667-4.33334-2.91667S2.16663 9.1 2.16663 10.5c0 1.1667 4.33333 1.1667 4.33333 1.1667z"/></svg>Валентин Петухов
-           </a>
-           <a class="logout-link" href="">Выйти</a>
-           <a class="compare-link" href="">
-             <svg class="compare-link-icon" width="14" height="14" fill="none"><path fill="#000" d="M2.917 5.367h1.75v5.716h-1.75V5.367zm3.266-2.45h1.634v8.166H6.183V2.917zM9.45 7.583h1.633v3.5H9.45v-3.5z"/></svg>Сравнить
-           </a>
-           <a class="cart-link" href="">
-             <svg class="cart-link-icon" width="11" height="10" fill="none"><path fill="#231F20" d="M10.862 2.522a.358.358 0 00-.273-.129H8.658V3.42c0 .471-.404.855-.901.855s-.901-.384-.901-.855V2.393H5.054V3.42c0 .471-.404.855-.9.855-.498 0-.902-.384-.902-.855V2.393H1.321a.358.358 0 00-.273.129.397.397 0 00-.09.3l.648 5.963C1.618 9.457 2.142 10 2.784 10h6.342c.642 0 1.166-.543 1.179-1.215l.648-5.964a.398.398 0 00-.09-.3z"/><path fill="#231F20" d="M4.153 3.76c.2 0 .36-.153.36-.341v-1.88c0-.528.562-.855 1.082-.855h.9c.548 0 .902.335.902.854v1.88c0 .19.161.343.36.343.199 0 .36-.154.36-.342v-1.88C8.117.646 7.435 0 6.496 0h-.901C4.6 0 3.793.69 3.793 1.538v1.88c0 .19.162.343.36.343z"/></svg>Корзина
-           </a>
-         </div>
+          <div class="user-navigation-header">
+            <a class="profile-link" href="#">
+              <svg class="profile-link-icon" width="13" height="14" fill="none"><path fill="#000" d="M6.49996 2.33333c1.19708 0 2.16667 1.04417 2.16667 2.33333C8.66663 5.95583 7.69704 7 6.49996 7S4.33329 5.95583 4.33329 4.66666c0-1.28916.96959-2.33333 2.16667-2.33333zm0 9.33337s4.33334 0 4.33334-1.1667c0-1.4-2.11251-2.91667-4.33334-2.91667S2.16663 9.1 2.16663 10.5c0 1.1667 4.33333 1.1667 4.33333 1.1667z"/></svg>Валентин Петухов
+            </a>
+            <a class="logout-link" href="#">Выйти</a>
+            <a class="compare-link" href="#">
+              <svg class="compare-link-icon" width="14" height="14" fill="none"><path fill="#000" d="M2.917 5.367h1.75v5.716h-1.75V5.367zm3.266-2.45h1.634v8.166H6.183V2.917zM9.45 7.583h1.633v3.5H9.45v-3.5z"/></svg>Сравнить
+            </a>
+            <a class="cart-link" href="#">
+              <svg class="cart-link-icon" width="11" height="10" fill="none"><path fill="#231F20" d="M10.862 2.522a.358.358 0 00-.273-.129H8.658V3.42c0 .471-.404.855-.901.855s-.901-.384-.901-.855V2.393H5.054V3.42c0 .471-.404.855-.9.855-.498 0-.902-.384-.902-.855V2.393H1.321a.358.358 0 00-.273.129.397.397 0 00-.09.3l.648 5.963C1.618 9.457 2.142 10 2.784 10h6.342c.642 0 1.166-.543 1.179-1.215l.648-5.964a.398.398 0 00-.09-.3z"/><path fill="#231F20" d="M4.153 3.76c.2 0 .36-.153.36-.341v-1.88c0-.528.562-.855 1.082-.855h.9c.548 0 .902.335.902.854v1.88c0 .19.161.343.36.343.199 0 .36-.154.36-.342v-1.88C8.117.646 7.435 0 6.496 0h-.901C4.6 0 3.793.69 3.793 1.538v1.88c0 .19.162.343.36.343z"/></svg>Корзина
+            </a>
+          </div>
         </div>
         <ul class="site-navigation">
           <li class="site-navigation-catalog">
-            <a href="catalog.html">Каталог товаров</a>
+            <a class="site-navigation-link site-navigation-catalog-link" href="catalog.html">Каталог товаров</a>
+            <div class="catalog-menu">
+              <h2 class="visually-hidden">Меню каталога товаров</h2>
+              <ul>
+                <li>
+                  <a href="#">Виртуальная реальность</a>
+                </li>
+                <li>
+                  <a href="catalog.html">Моноподы для селфи</a>
+                </li>
+                <li>
+                  <a href="#">Экшн-камеры</a>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <a href="#">Фитнес-браслеты</a>
+                </li>
+                <li>
+                  <a href="#">Умные часы</a>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <a href="#">Квадрокоптер</a>
+                </li>
+              </ul>
+            </div>
           </li>
           <li class="site-navigation-delivery">
-            <a href="">Доставка</a>
+            <a class="site-navigation-link" href="">Доставка</a>
           </li>
           <li class="site-navigation-waranty">
-            <a href="">Гарантия</a>
+            <a class="site-navigation-link" href="">Гарантия</a>
           </li>
           <li class="site-navigation-contacts">
-            <a href="">Контакты</a>
+            <a class="site-navigation-link" href="">Контакты</a>
           </li>
         </ul>
-        <div class="catalog-menu">
-          <h2 class="visually-hidden">Меню каталога товаров</h2>
-          <div class="catalog-menu-container">
-            <ul>
-              <li>
-                <a href="">Виртуальная реальность</a>
-              </li>
-              <li>
-                <a href="">Моноподы для селфи</a>
-              </li>
-              <li>
-                <a href="">Экшн-камеры</a>
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <a href="">Фитнес-браслеты</a>
-              </li>
-              <li>
-                <a href="">Умные часы</a>
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <a href="">Квадрокоптер</a>
-              </li>
-            </ul>
-          </div>
-        </div>
       </nav>
     </header>
     <main class="page-catalog container">
-      <h1 class="title">Моноподы для селфи</h1>
+      <h1 class="title page-title">Моноподы для селфи</h1>
       <ul class="breadcrumbs">
         <li>
           <a href="index.html">Главная</a>
@@ -140,21 +140,25 @@
                 </li>
               </ul>
           </fieldset>
-          <button class="button" type="submit">Показать</button>
+          <button class="button catalog-button" type="submit">Показать</button>
         </form>
       </div>
       <div class="catalog-column-right">
         <div class="sort">
           <h2>Cортировка:</h2>
           <ul class="sort-list">
-            <li class="sort-button-current"><button>По цене</button></li>
-            <li><button>По типу</button></li>
-            <li><button>По популярности</button></li>
+            <li><button class="sort-list-button sort-list-button-current">По цене</button></li>
+            <li><button class="sort-list-button">По типу</button></li>
+            <li><button class="sort-list-button">По популярности</button></li>
           </ul>
-          <ul class="sort-buttons">
-            <li><button aria-label="Сортировать по возрастанию"></button></li>
-            <li><button aria-label="Сортировать по убыванию"></button></li>
-          </ul>
+          <div class="sort-buttons">
+            <button class="sort-button-up" aria-label="Сортировать по возрастанию">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"><path fill="#000" d="M3 14h11L8.5 4 3 14z" opacity=".2"/></svg>
+            </button>
+            <button class="sort-button-down" aria-label="Сортировать по убыванию">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"><path fill="#000" d="M14 4H3l5.5 10L14 4z"/></svg>
+            </button>
+          </div>
         </div>
         <div class="catalog">
           <h2 class="visually-hidden">Список товаров — Моноподы для селфи</h2>
@@ -167,7 +171,7 @@
               </div>
               <div class="catalog-item-buttons">
                 <div class="catalog-buttons-container">
-                  <button class="button">В корзину</button>
+                  <button class="button catalog-button">В корзину</button>
                   <button class="button-compare">Добавить к сравнению</button>
                 </div>
               </div>
@@ -180,7 +184,7 @@
               </div>
               <div class="catalog-item-buttons">
                 <div class="catalog-buttons-container">
-                  <button class="button">В корзину</button>
+                  <button class="button catalog-button">В корзину</button>
                   <button class="button-compare">Добавить к сравнению</button>
                 </div>
               </div>
@@ -193,7 +197,7 @@
               </div>
               <div class="catalog-item-buttons">
                 <div class="catalog-buttons-container">
-                  <button class="button">В корзину</button>
+                  <button class="button catalog-button">В корзину</button>
                   <button class="button-compare">Добавить к сравнению</button>
                 </div>
               </div>
@@ -206,7 +210,7 @@
               </div>
               <div class="catalog-item-buttons">
                 <div class="catalog-buttons-container">
-                  <button class="button">В корзину</button>
+                  <button class="button catalog-button">В корзину</button>
                   <button class="button-compare">Добавить к сравнению</button>
                 </div>
               </div>
@@ -232,10 +236,10 @@
       <div class="container">
         <div class="footer-navigation-wrapper">
           <a class="footer-logo footer-logo-link" href="index.html" aria-label="Лого магазина Девайс">
-            <svg width="163" height="35" fill="none"><g clip-path="url(#clip0)"><path fill="#000" fill-rule="evenodd" d="M-.151.702v33.6h13.532a15.721 15.721 0 0011.72-4.824 16.459 16.459 0 004.712-11.976 16.457 16.457 0 00-4.712-11.976A15.724 15.724 0 0013.381.702H-.151zM7.582 26.91V8.091h5.8a8.646 8.646 0 016.5 2.568 9.408 9.408 0 012.489 6.84 9.406 9.406 0 01-2.489 6.84 8.642 8.642 0 01-6.5 2.568h-5.8v.003zm34.8-5.952h12.082v-7.3H42.378V8.091h13.291V.702H34.645v33.6H55.91V26.91H42.378v-5.952h.004zm36.343 13.344L89.744.702h-8.458l-7.491 24.72L66.304.702h-8.457l11.019 33.6h9.859zm14.4 0h7.733V.702h-7.733v33.6zm38.615-1.416a15.508 15.508 0 006.041-5.688l-6.67-3.84a7.481 7.481 0 01-3.165 3.024 9.873 9.873 0 01-4.664 1.1 9.594 9.594 0 01-7.177-2.736 9.911 9.911 0 01-2.682-7.248 9.91 9.91 0 012.682-7.248 9.593 9.593 0 017.177-2.736 9.897 9.897 0 014.639 1.08 7.589 7.589 0 013.19 3.048l6.67-3.84a15.874 15.874 0 00-6.09-5.688 17.42 17.42 0 00-8.409-2.088c-9.779-.272-17.797 7.691-17.591 17.472-.208 9.781 7.809 17.747 17.588 17.476 2.95.027 5.859-.691 8.458-2.088h.003zm17.881-11.928h12.082v-7.3h-12.085V8.091h13.29V.702h-21.023v33.6h21.265V26.91h-13.532v-5.952h.003z" clip-rule="evenodd"/></g><defs><clipPath id="clip0"><path fill="#fff" d="M0 0h163v35H0z"/></clipPath></defs></svg>
+            <svg width="163" height="35" fill="none"><g clip-path="url(#clip0)"><path fill="#000" fill-rule="evenodd" d="M-.151.702v33.6h13.532a15.721 15.721 0 0011.72-4.824 16.459 16.459 0 004.712-11.976 16.457 16.457 0 00-4.712-11.976A15.724 15.724 0 0013.381.702H-.151zM7.582 26.91V8.091h5.8a8.646 8.646 0 016.5 2.568 9.408 9.408 0 012.489 6.84 9.406 9.406 0 01-2.489 6.84 8.642 8.642 0 01-6.5 2.568h-5.8v.003zm34.8-5.952h12.082v-7.3H42.378V8.091h13.291V.702H34.645v33.6H55.91V26.91H42.378v-5.952h.004zm36.343 13.344L89.744.702h-8.458l-7.491 24.72L66.304.702h-8.457l11.019 33.6h9.859zm14.4 0h7.733V.702h-7.733v33.6zm38.615-1.416a15.508 15.508 0 006.041-5.688l-6.67-3.84a7.481 7.481 0 01-3.165 3.024 9.873 9.873 0 01-4.664 1.1 9.594 9.594 0 01-7.177-2.736 9.911 9.911 0 01-2.682-7.248 9.91 9.91 0 012.682-7.248 9.593 9.593 0 017.177-2.736 9.897 9.897 0 014.639 1.08 7.589 7.589 0 013.19 3.048l6.67-3.84a15.874 15.874 0 00-6.09-5.688 17.42 17.42 0 00-8.409-2.088c-9.779-.272-17.797 7.691-17.591 17.472-.208 9.781 7.809 17.747 17.588 17.476 2.95.027 5.859-.691 8.458-2.088h.003zm17.881-11.928h12.082v-7.3h-12.085V8.091h13.29V.702h-21.023v33.6h21.265V26.91h-13.532v-5.952h.003z" clip-rule="evenodd"/></g></svg>
           </a>
           <div class="user-navigation user-navigation-footer">
-            <a class="profile-link" href="">
+            <a class="profile-link" href="user_profile.html">
               <svg class="profile-link-icon" width="13" height="14" fill="none"><path fill="#000" d="M6.49996 2.33333c1.19708 0 2.16667 1.04417 2.16667 2.33333C8.66663 5.95583 7.69704 7 6.49996 7S4.33329 5.95583 4.33329 4.66666c0-1.28916.96959-2.33333 2.16667-2.33333zm0 9.33337s4.33334 0 4.33334-1.1667c0-1.4-2.11251-2.91667-4.33334-2.91667S2.16663 9.1 2.16663 10.5c0 1.1667 4.33333 1.1667 4.33333 1.1667z"/></svg>Валентин Петухов
             </a>
             <a class="logout-link" href="">Выйти</a>
