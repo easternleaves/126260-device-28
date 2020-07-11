@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 2 version,not dead,not ie <= 11
+*/
+
 :root {
   --basic-black: #000000;
   --basic-black-alfa60: rgba(0, 0, 0, 0.6);
@@ -36,7 +43,7 @@
   font-weight: 800;
   font-style: normal;
   src: url("../fonts/gilroyextrabold.woff2") format("woff2"),
-       url("../fonts/gilroyextrabold.woff") format("woff");
+  url("../fonts/gilroyextrabold.woff") format("woff");
 }
 
 @font-face {
@@ -44,7 +51,7 @@
   font-weight: 300;
   font-style: normal;
   src: url("../fonts/gilroylight.woff2") format("woff2"),
-       url("../fonts/gilroylight.woff") format("woff");
+  url("../fonts/gilroylight.woff") format("woff");
 }
 
 @font-face {
@@ -52,7 +59,7 @@
   font-weight: 400;
   font-style: normal;
   src: url("../fonts/opensans.woff2") format("woff2"),
-       url("../fonts/opensans.woff") format("woff");
+  url("../fonts/opensans.woff") format("woff");
 }
 
 @font-face {
@@ -60,7 +67,7 @@
   font-weight: 300;
   font-style: normal;
   src: url("../fonts/opensanslight.woff2") format("woff2"),
-       url("../fonts/opensanslight.woff") format("woff");
+  url("../fonts/opensanslight.woff") format("woff");
 }
 
 body {
@@ -91,6 +98,7 @@ img {
 .page-body {
   min-height: 100%;
   display: grid;
+  grid-template-rows: -webkit-min-content 1fr -webkit-min-content;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
 }
@@ -179,8 +187,24 @@ img {
   background-color: transparent;
 }
 
+.site-search-input::-webkit-input-placeholder {
+  color: var(--basic-black-alfa30);
+}
+
+.site-search-input::-moz-placeholder {
+  color: var(--basic-black-alfa30);
+}
+
 .site-search-input::placeholder {
   color: var(--basic-black-alfa30);
+}
+
+.site-search-input:hover::-webkit-input-placeholder {
+  color: var(--basic-black-alfa60);
+}
+
+.site-search-input:hover::-moz-placeholder {
+  color: var(--basic-black-alfa60);
 }
 
 .site-search-input:hover::placeholder {
@@ -1116,6 +1140,8 @@ img {
   position: relative;
   display: block;
   cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
   user-select: none;
   font-weight: 300;
   font-size: 14px;
@@ -1761,10 +1787,12 @@ img {
 
 .modal-show {
   display: block;
+  -webkit-animation: bounce 0.6s;
   animation: bounce 0.6s;
 }
 
 .modal-error {
+  -webkit-animation: shake 0.6s;
   animation: shake 0.6s;
 }
 
@@ -1932,6 +1960,24 @@ img {
   border: none;
 }
 
+@-webkit-keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(20px);
+  }
+
+  90% {
+    transform: translateY(-5px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
 @keyframes bounce {
   0% {
     transform: translateY(-2000px);
@@ -1947,6 +1993,25 @@ img {
 
   100% {
     transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50% {
+    transform: translateX(-5px);
+  }
+
+  20%,
+  40%,
+  60% {
+    transform: translateX(5px);
   }
 }
 
