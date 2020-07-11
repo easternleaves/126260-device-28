@@ -278,7 +278,7 @@
           <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
             проверить работоспособность покупки. Всякое бывает.</p>
             <a class="map-preview" aria-label="Превью интерактивной карты" href=""><img src="img/map.jpg" width="560" height="222" alt="Офис на карте по адресу: улица Строителей, 15. Пересечение Строителей и Вернадского"></a>
-            <a class="button index-button" href="form.html">Напишите нам</a>
+            <a class="button form-button" href="form.html">Напишите нам</a>
         </section>
       </div>
     </main>
@@ -355,19 +355,19 @@
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
         <div class="feedback-option feedback-option-name">
           <label for="feedback-name">Ваше имя:</label>
-          <input type="text" id="feedback-name" name="name" placeholder="Имя Фамилия">
+          <input class="feedback-field-name" type="text" id="feedback-name" name="name" placeholder="Имя Фамилия">
         </div>
         <div class="feedback-option feedback-option-email">
           <label for="feedback-email">Ваш e-mail:</label>
-          <input id="feedback-email" type="email" name="email" placeholder="email@example.com">
+          <input class="feedback-field-email" id="feedback-email" type="email" name="email" placeholder="email@example.com">
         </div>
         <div class="feedback-option feedback-option-comment">
           <label for="feedback-comment">Текст письма:</label>
-          <textarea id="feedback-comment" name="comment" rows="8" placeholder="В свободной форме"></textarea>
+          <textarea class="feedback-field-comment" id="feedback-comment" name="comment" rows="8" placeholder="В свободной форме"></textarea>
         </div>
         <button class="button button-send" type="submit">Отправить</button>
       </form>
-      <div class="modal-close-background">
+      <div class="modal-close">
         <button class="modal-close-icon" type="button" aria-label="Закрыть"></button>
       </div>
     </section>
@@ -375,9 +375,10 @@
     <section class="modal modal-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
       <img src="img/map-big.jpg" width="960" height="559" alt="Интерактивная карта">
-      <div class="modal-close-background">
+      <div class="modal-close">
         <button class="modal-close-icon" type="button" aria-label="Закрыть"></button>
       </div>
     </section>
+    <script src="js/scripts.js"></script>
   </body>
 </html>
